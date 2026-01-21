@@ -17,9 +17,7 @@ public class VendorAClient {
 
     public List<ProductDTO> fetchProducts()
     {
-        ResponseEntity<ProductDTO[]> response =
-                restTemplate.getForEntity("http://localhost:8080/vendor-a/products", ProductDTO[].class);
-
+        ResponseEntity<ProductDTO[]> response = restTemplate.getForEntity("http://localhost:8080/vendor-a/products", ProductDTO[].class);
         return Arrays.asList(response.getBody());
     }
 }
