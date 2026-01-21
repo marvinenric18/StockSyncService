@@ -15,4 +15,4 @@ spring:
       enabled: true
 
 vendor-b:
-  csv-path: C:/tmp/vendor-b/stock.csv
+  csv-path: D:/StockSyncService/vendorBCSV/stock.csv
