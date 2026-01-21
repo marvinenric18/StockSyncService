@@ -116,3 +116,5 @@ Trade-offs
 NOTE: CSV path can be configurable in application.yml
 
 You can pull this code from: https://github.com/marvinenric18/StockSyncService.git
+
+You can access swagger from: http://localhost:8080/swagger-ui/index.html#
