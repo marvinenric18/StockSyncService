@@ -89,6 +89,18 @@ XYZ456,Product B,0
 ```
 
 This also have Stock Synchronization Logic.
+--- 
+## Out-of-Stock Detection
+
+The service detects when a product's stock quantity transitions
+from a positive value (> 0) to zero.
+
+When this condition is met, the event is **persisted to a database table**
+(`stock_events`) rather than only being logged.
+
+This approach was chosen to demonstrate database modeling and to allow
+future extensions such as notifications, reporting, or alerting based on
+out-of-stock events.
 
 ---
 
